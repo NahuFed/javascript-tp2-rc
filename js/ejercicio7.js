@@ -2,14 +2,20 @@
 // que indique el usuario (no mayor de 50) de la siguiente forma : (suponiendo que
 // indica 30).
 
-let numero = parseInt(prompt('ingrese un numero del 1 al 50'))
-
-for(let i = numero; i > 0 ; i--){
-
-    for(let j = i; j>0; j--){
-        document.write(i)
+let numero = 0
+do{
+    numero=parseInt(prompt('ingrese un numero del 1 al 50'))    
+    if(numero > 0 && numero  <= 50){
+        for(let i = numero; i > 0 ; i--){
+        
+            for(let j = i; j>0; j--){
+                document.write(i)
+            }
+        
+            document.write('<br>')
+        
+        }
+    }else{
+        alert('no es un numero valido')
     }
-
-    document.write('<br>')
-
-}
+}while(isNaN(numero)===true || numero<=0 || numero>50)

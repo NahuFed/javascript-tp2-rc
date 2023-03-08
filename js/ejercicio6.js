@@ -20,4 +20,4 @@ if (numero>=1 && numero<=30){
 }else{
     alert('no es un numero valido')
 }
-}while(isNaN(numero)===true) 
+}while(isNaN(numero)===true || numero<=0 || numero>30) 
